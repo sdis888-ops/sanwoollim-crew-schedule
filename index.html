@@ -1,0 +1,564 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>산울림 청년크루의 정기모임 일정</title>
+<style>
+:root{
+  --bg:#f6f5f1;
+  --surface:#ffffff;
+  --surface-2:#efeee7;
+  --border:#e1ddd0;
+  --text:#211f1a;
+  --text-muted:#726c5d;
+  --accent:#4a4a96;
+  --accent-soft:#eae9f7;
+  --forest:#2f7a4f;
+  --forest-soft:#e3f1e7;
+  --party:#b0631e;
+  --party-soft:#f8ead9;
+  --good:#2f8f5b;
+  --good-soft:#e2f2e9;
+  --mid:#b07a1e;
+  --mid-soft:#f7eeda;
+  --low:#a8493f;
+  --low-soft:#f6e8e5;
+  --gold:#a5790a;
+  --gold-soft:#fbf0d6;
+  --silver:#5b6472;
+  --silver-soft:#e9edf1;
+  --chip-off-bg:#f1f0ea;
+  --chip-off-text:#8a8574;
+  --shadow: 0 1px 2px rgba(30,28,20,0.06), 0 8px 24px -12px rgba(30,28,20,0.18);
+}
+:root:not([data-theme="light"]){
+  @media (prefers-color-scheme: dark){
+    --bg:#17161a;
+    --surface:#1f1e24;
+    --surface-2:#26252c;
+    --border:#38363f;
+    --text:#f0eee7;
+    --text-muted:#a29d8f;
+    --accent:#a6a4f2;
+    --accent-soft:rgba(166,164,242,0.16);
+    --forest:#79cf9b;
+    --forest-soft:rgba(121,207,155,0.14);
+    --party:#e8a95e;
+    --party-soft:rgba(232,169,94,0.16);
+    --good:#6bd19a;
+    --good-soft:rgba(107,209,154,0.14);
+    --mid:#e3b263;
+    --mid-soft:rgba(227,178,99,0.14);
+    --low:#e08b7f;
+    --low-soft:rgba(224,139,127,0.14);
+    --gold:#e8c15a;
+    --gold-soft:rgba(232,193,90,0.16);
+    --silver:#b8c0cc;
+    --silver-soft:rgba(184,192,204,0.14);
+    --chip-off-bg:#2b2a31;
+    --chip-off-text:#847e70;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px -12px rgba(0,0,0,0.5);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#17161a;
+  --surface:#1f1e24;
+  --surface-2:#26252c;
+  --border:#38363f;
+  --text:#f0eee7;
+  --text-muted:#a29d8f;
+  --accent:#a6a4f2;
+  --accent-soft:rgba(166,164,242,0.16);
+  --forest:#79cf9b;
+  --forest-soft:rgba(121,207,155,0.14);
+  --party:#e8a95e;
+  --party-soft:rgba(232,169,94,0.16);
+  --good:#6bd19a;
+  --good-soft:rgba(107,209,154,0.14);
+  --mid:#e3b263;
+  --mid-soft:rgba(227,178,99,0.14);
+  --low:#e08b7f;
+  --low-soft:rgba(224,139,127,0.14);
+  --gold:#e8c15a;
+  --gold-soft:rgba(232,193,90,0.16);
+  --silver:#b8c0cc;
+  --silver-soft:rgba(184,192,204,0.14);
+  --chip-off-bg:#2b2a31;
+  --chip-off-text:#847e70;
+  --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px -12px rgba(0,0,0,0.5);
+}
+
+*{box-sizing:border-box;}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Noto Sans KR","Pretendard",system-ui,-apple-system,sans-serif;
+  padding-inline:16px;
+  padding-block:28px calc(48px + env(safe-area-inset-bottom,0px));
+  max-width:760px;
+  margin:0 auto;
+  line-height:1.55;
+}
+.mono{ font-family:"IBM Plex Mono","JetBrains Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums; }
+
+header.page{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-bottom:22px;
+}
+.eyebrow{
+  font-size:12.5px;
+  font-weight:700;
+  letter-spacing:0.08em;
+  color:var(--accent);
+  text-transform:uppercase;
+}
+h1{
+  font-size:clamp(24px,4.5vw,32px);
+  font-weight:900;
+  margin:0;
+  text-wrap:balance;
+  letter-spacing:-0.01em;
+}
+.sub{
+  color:var(--text-muted);
+  font-size:14px;
+  max-width:60ch;
+}
+.location-line{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:13.5px;
+  color:var(--text);
+  background:var(--surface-2);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:7px 12px;
+  width:fit-content;
+}
+.location-line b{ font-weight:700; }
+.legend-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:4px;
+  align-items:center;
+}
+.tag{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  font-size:12px;
+  font-weight:700;
+  padding:3px 10px;
+  border-radius:999px;
+}
+.tag.regular{ background:var(--accent-soft); color:var(--accent); }
+.tag.forest{ background:var(--forest-soft); color:var(--forest); }
+.tag.party{ background:var(--party-soft); color:var(--party); }
+
+.want-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  align-self:flex-start;
+  margin-top:6px;
+  padding:11px 20px;
+  border-radius:999px;
+  background:var(--text);
+  color:var(--bg);
+  font-weight:700;
+  font-size:14.5px;
+  text-decoration:none;
+  box-shadow:var(--shadow);
+  transition:transform .12s ease;
+}
+.want-btn:hover{ transform:translateY(-1px); }
+.want-btn svg{ width:16px; height:16px; flex:0 0 auto; }
+
+.month-block{ margin-bottom:30px; }
+.month-head{
+  display:flex;
+  align-items:baseline;
+  gap:8px;
+  margin-bottom:12px;
+  padding-bottom:8px;
+  border-bottom:2px solid var(--text);
+}
+.month-head .m-num{
+  font-size:22px;
+  font-weight:900;
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+}
+.month-head .m-label{
+  font-size:13px;
+  color:var(--text-muted);
+}
+
+.event-list{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.event-card{
+  display:flex;
+  gap:16px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:16px 18px;
+  box-shadow:var(--shadow);
+}
+.event-card.regular{ border-left:4px solid var(--accent); }
+.event-card.forest{ border-left:4px solid var(--forest); }
+.event-card.party{ border-left:4px solid var(--party); }
+
+.date-block{ flex:0 0 auto; width:56px; text-align:center; }
+.date-block .d-day{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:26px; font-weight:700; line-height:1;
+}
+.date-block .d-wd{ font-size:12px; color:var(--text-muted); margin-top:4px; }
+
+.event-body{ flex:1; min-width:0; }
+.event-top{
+  display:flex; align-items:center; gap:8px; flex-wrap:wrap;
+}
+.event-time{
+  font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:14px; font-weight:700;
+}
+.note-box{
+  margin-top:10px;
+  font-size:12.5px;
+  color:var(--text-muted);
+  background:var(--surface-2);
+  border-radius:8px;
+  padding:8px 12px;
+  border:1px solid var(--border);
+}
+/* Reference section */
+.ref-details{
+  margin-top:36px;
+  border-top:1px solid var(--border);
+  padding-top:18px;
+}
+.ref-details summary{
+  cursor:pointer;
+  font-size:14.5px;
+  font-weight:700;
+  color:var(--text);
+  list-style:none;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 0;
+}
+.ref-details summary::-webkit-details-marker{ display:none; }
+.ref-details summary::before{
+  content:"▸";
+  color:var(--accent);
+  font-size:12px;
+  transition:transform .15s ease;
+}
+.ref-details[open] summary::before{ transform:rotate(90deg); }
+.ref-sub{
+  font-size:12.5px;
+  color:var(--text-muted);
+  font-weight:400;
+  margin-top:4px;
+  max-width:60ch;
+}
+.ref-body{ margin-top:16px; }
+
+.rp-chip{
+  font-size:12px;
+  padding:3px 9px;
+  border-radius:999px;
+  background:var(--surface-2);
+  border:1px solid var(--border);
+  color:var(--text);
+}
+.rp-participants{ display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px; }
+
+.rule-box{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:9px 13px;
+  font-size:12px;
+  color:var(--text-muted);
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px 14px;
+  margin-bottom:16px;
+}
+.rule-box b{ color:var(--text); font-weight:700; }
+
+.ref-controls{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:14px;
+  flex-wrap:wrap;
+}
+.ref-controls select{
+  font:inherit;
+  font-size:12.5px;
+  padding:5px 9px;
+  border-radius:8px;
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--text);
+}
+.ref-legend{
+  display:flex; gap:10px; flex-wrap:wrap; margin-left:auto;
+  font-size:11.5px; color:var(--text-muted);
+}
+.ref-legend span{ display:inline-flex; align-items:center; gap:4px; }
+.ref-legend i{ width:9px; height:9px; border-radius:3px; display:inline-block; }
+
+.ref-month-title{
+  font-size:15px;
+  font-weight:800;
+  margin:20px 0 6px;
+}
+.table-wrap{
+  overflow:auto;
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:var(--surface);
+  box-shadow:var(--shadow);
+  max-height:420px;
+}
+table{ width:100%; border-collapse:collapse; min-width:600px; }
+thead th{
+  position:sticky; top:0;
+  background:var(--surface-2);
+  text-align:left;
+  font-size:11.5px;
+  font-weight:700;
+  color:var(--text-muted);
+  letter-spacing:0.03em;
+  padding:8px 10px;
+  border-bottom:1px solid var(--border);
+  white-space:nowrap;
+}
+tbody tr{ border-bottom:1px solid var(--border); }
+tbody tr:last-child{ border-bottom:none; }
+tbody tr:hover{ background:var(--surface-2); }
+tbody tr.rank1{ background:var(--gold-soft); }
+tbody tr.rank2{ background:var(--silver-soft); }
+td{ padding:8px 10px; vertical-align:top; font-size:12.5px; }
+td.date-cell{ white-space:nowrap; }
+td.date-cell .wd{ color:var(--text-muted); font-size:11px; margin-left:2px; }
+td.band-cell{ white-space:nowrap; }
+td.band-cell .b-label{ font-weight:700; }
+td.band-cell .b-time{
+  display:block; font-family:"IBM Plex Mono",ui-monospace,monospace;
+  color:var(--text-muted); font-size:10.5px;
+}
+.badge{
+  display:inline-block; font-size:9.5px; font-weight:700;
+  padding:1px 6px; border-radius:999px; margin-left:5px; vertical-align:middle;
+}
+.badge.rank1{ background:var(--gold); color:var(--surface); }
+.badge.rank2{ background:var(--silver); color:var(--surface); }
+.bar-cell{ width:110px; }
+.bar-wrap{ display:flex; align-items:center; gap:6px; }
+.bar-track{ flex:1; height:7px; border-radius:999px; background:var(--surface-2); overflow:hidden; min-width:48px; }
+.bar-fill{ height:100%; border-radius:999px; }
+.bar-num{ font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:11.5px; font-weight:700; white-space:nowrap; }
+.tier-good .bar-fill{ background:var(--good); }
+.tier-good .bar-num{ color:var(--good); }
+.tier-mid .bar-fill{ background:var(--mid); }
+.tier-mid .bar-num{ color:var(--mid); }
+.tier-low .bar-fill{ background:var(--low); }
+.tier-low .bar-num{ color:var(--low); }
+.chips{ display:flex; flex-wrap:wrap; gap:3px; max-width:260px; }
+.chip{ font-size:10.5px; padding:1px 7px; border-radius:999px; white-space:nowrap; }
+.chip.on{ background:var(--good-soft); color:var(--good); font-weight:600; }
+.chip.off{ background:var(--chip-off-bg); color:var(--chip-off-text); }
+
+footer.note{
+  margin-top:26px;
+  font-size:12px;
+  color:var(--text-muted);
+  padding-top:14px;
+  border-top:1px solid var(--border);
+}
+
+@media (max-width:480px){
+  .event-card{ gap:12px; padding:14px; }
+  .date-block{ width:46px; }
+  .date-block .d-day{ font-size:22px; }
+}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;700&display=swap">
+
+<header class="page">
+  <div class="eyebrow">2026년 10&ndash;12월 &middot; 참여자 10명</div>
+  <h1>산울림 청년크루의 정기모임 일정</h1>
+  <div class="sub">월별 2회씩 잡은 정기모임 날짜예요. 10월 17일은 산림레포츠 대회 참가일로, 12월 19일은 송년파티로 이미 정해진 날짜를 반영했어요.</div>
+  <div class="location-line">📍 장소: <b>추후 공지</b> &middot; 확정되는 대로 이 페이지에 업데이트할게요</div>
+  <div class="legend-row">
+    <span class="tag regular">● 정기모임</span>
+    <span class="tag forest">● 산림레포츠 대회</span>
+    <span class="tag party">● 송년파티</span>
+  </div>
+  <a class="want-btn" href="https://padlet.com/DDUZZANg/want-padlet-s023i3cw5lcdoq4ivr4t" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+    하고 싶은 거
+  </a>
+</header>
+
+<div id="months"></div>
+
+<details class="ref-details">
+  <summary>참고사항 &middot; 전체 조율 결과 보기
+    <span class="ref-sub" style="display:block;">정기모임 날짜를 정할 때 참고했던 모두타임 투표 결과예요. 시간대(오전&middot;오후&middot;저녁)별로 겹치는 인원이 많은 순서로 정리했어요.</span>
+  </summary>
+  <div class="ref-body">
+    <div class="rule-box">
+      <span><b>오전</b> 06:00&ndash;12:00</span>
+      <span><b>오후</b> 14:00&ndash;18:00</span>
+      <span><b>저녁</b> 19:00&ndash;21:00</span>
+      <span>(점심 12&ndash;14시, 저녁식사 18&ndash;19시는 제외 &middot; 이름은 참여자1~10으로 표시)</span>
+    </div>
+    <div class="ref-controls">
+      <select id="sortMode">
+        <option value="count" selected>가능 인원 많은 순</option>
+        <option value="date">날짜 빠른 순</option>
+      </select>
+      <div class="ref-legend">
+        <span><i style="background:var(--gold)"></i>1순위(월 최고)</span>
+        <span><i style="background:var(--silver)"></i>2순위</span>
+      </div>
+    </div>
+    <div id="monthSections"></div>
+  </div>
+</details>
+
+<footer class="note">
+  기준: 2026-09-16 모두타임 등록 현황 &middot; 개인정보 보호를 위해 이름은 참여자1~10으로 표시했어요.
+</footer>
+
+<script>
+(function(){
+  var SCHEDULE = {"10": [{"day": 3, "weekday": "토", "type": "regular", "typeLabel": "정기모임", "time": "19:00 ~ 21:00", "note": null}, {"day": 17, "weekday": "토", "type": "forest", "typeLabel": "산림레포츠 대회", "time": "시간 추후 공지", "note": "이 날 하루 종일 시간이 안 된다고 표시한 사람: 참여자1, 참여자2, 참여자3, 참여자8, 참여자10 (5명) — 대회 참가 전에 따로 확인해보면 좋을 것 같아요."}], "11": [{"day": 8, "weekday": "일", "type": "regular", "typeLabel": "정기모임", "time": "14:00 ~ 18:00", "note": null}, {"day": 14, "weekday": "토", "type": "regular", "typeLabel": "정기모임", "time": "19:00 ~ 21:00", "note": null}], "12": [{"day": 6, "weekday": "일", "type": "regular", "typeLabel": "정기모임", "time": "06:00 ~ 12:00", "note": null}, {"day": 19, "weekday": "토", "type": "party", "typeLabel": "송년파티", "time": "16:00 ~", "note": "현재 등록된 시간 기준으로는 이 시간대에 2명만 가능하다고 되어 있어요. 정기모임이 아닌 확정 일정이니, 참여자들에게 미리 일정 조율을 공지하면 좋을 것 같아요."}]};
+  var MONTH_LABEL = {10:"October", 11:"November", 12:"December"};
+  var months = document.getElementById("months");
+
+  Object.keys(SCHEDULE).sort(function(a,b){return a-b;}).forEach(function(m){
+    var events = SCHEDULE[m];
+    var block = document.createElement("div");
+    block.className = "month-block";
+
+    var head = document.createElement("div");
+    head.className = "month-head";
+    head.innerHTML = '<span class="m-num">'+m+'월</span><span class="m-label">'+MONTH_LABEL[m]+' &middot; '+events.length+'회</span>';
+    block.appendChild(head);
+
+    var list = document.createElement("div");
+    list.className = "event-list";
+
+    events.forEach(function(ev){
+      var card = document.createElement("div");
+      card.className = "event-card " + ev.type;
+      var noteHtml = ev.note ? '<div class="note-box">'+ev.note+'</div>' : '';
+      card.innerHTML =
+        '<div class="date-block"><div class="d-day">'+ev.day+'</div><div class="d-wd">('+ev.weekday+')</div></div>'+
+        '<div class="event-body">'+
+          '<div class="event-top"><span class="tag '+ev.type+'">'+ev.typeLabel+'</span><span class="event-time">'+ev.time+'</span></div>'+
+          noteHtml +
+        '</div>';
+      list.appendChild(card);
+    });
+
+    block.appendChild(list);
+    months.appendChild(block);
+  });
+
+  // ---- reference section ----
+  var ROWS = [{"month": 10, "day": 31, "weekday": "토", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 4, "avail": ["참여자4", "참여자6", "참여자9", "참여자10"], "unavailCount": 6, "unavail": ["참여자1", "참여자2", "참여자3", "참여자5", "참여자7", "참여자8"]}, {"month": 10, "day": 31, "weekday": "토", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 4, "avail": ["참여자3", "참여자5", "참여자6", "참여자10"], "unavailCount": 6, "unavail": ["참여자1", "참여자2", "참여자4", "참여자7", "참여자8", "참여자9"]}, {"month": 10, "day": 31, "weekday": "토", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 6, "avail": ["참여자3", "참여자5", "참여자6", "참여자7", "참여자9", "참여자10"], "unavailCount": 4, "unavail": ["참여자1", "참여자2", "참여자4", "참여자8"]}, {"month": 11, "day": 14, "weekday": "토", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 5, "avail": ["참여자1", "참여자4", "참여자6", "참여자9", "참여자10"], "unavailCount": 5, "unavail": ["참여자2", "참여자3", "참여자5", "참여자7", "참여자8"]}, {"month": 11, "day": 14, "weekday": "토", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 4, "avail": ["참여자1", "참여자3", "참여자6", "참여자10"], "unavailCount": 6, "unavail": ["참여자2", "참여자4", "참여자5", "참여자7", "참여자8", "참여자9"]}, {"month": 11, "day": 14, "weekday": "토", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 6, "avail": ["참여자1", "참여자3", "참여자6", "참여자7", "참여자9", "참여자10"], "unavailCount": 4, "unavail": ["참여자2", "참여자4", "참여자5", "참여자8"]}, {"month": 10, "day": 3, "weekday": "토", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 3, "avail": ["참여자4", "참여자8", "참여자9"], "unavailCount": 7, "unavail": ["참여자1", "참여자2", "참여자3", "참여자5", "참여자6", "참여자7", "참여자10"]}, {"month": 10, "day": 3, "weekday": "토", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 3, "avail": ["참여자3", "참여자4", "참여자8"], "unavailCount": 7, "unavail": ["참여자1", "참여자2", "참여자5", "참여자6", "참여자7", "참여자9", "참여자10"]}, {"month": 10, "day": 3, "weekday": "토", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 5, "avail": ["참여자3", "참여자4", "참여자7", "참여자8", "참여자9"], "unavailCount": 5, "unavail": ["참여자1", "참여자2", "참여자5", "참여자6", "참여자10"]}, {"month": 10, "day": 24, "weekday": "토", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 3, "avail": ["참여자4", "참여자9", "참여자10"], "unavailCount": 7, "unavail": ["참여자1", "참여자2", "참여자3", "참여자5", "참여자6", "참여자7", "참여자8"]}, {"month": 10, "day": 24, "weekday": "토", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 3, "avail": ["참여자3", "참여자5", "참여자10"], "unavailCount": 7, "unavail": ["참여자1", "참여자2", "참여자4", "참여자6", "참여자7", "참여자8", "참여자9"]}, {"month": 10, "day": 24, "weekday": "토", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 5, "avail": ["참여자3", "참여자5", "참여자7", "참여자9", "참여자10"], "unavailCount": 5, "unavail": ["참여자1", "참여자2", "참여자4", "참여자6", "참여자8"]}, {"month": 10, "day": 25, "weekday": "일", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 5, "avail": ["참여자1", "참여자5", "참여자6", "참여자9", "참여자10"], "unavailCount": 5, "unavail": ["참여자2", "참여자3", "참여자4", "참여자7", "참여자8"]}, {"month": 10, "day": 25, "weekday": "일", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 5, "avail": ["참여자1", "참여자3", "참여자6", "참여자7", "참여자10"], "unavailCount": 5, "unavail": ["참여자2", "참여자4", "참여자5", "참여자8", "참여자9"]}, {"month": 10, "day": 25, "weekday": "일", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 4, "avail": ["참여자1", "참여자3", "참여자6", "참여자10"], "unavailCount": 6, "unavail": ["참여자2", "참여자4", "참여자5", "참여자7", "참여자8", "참여자9"]}, {"month": 11, "day": 7, "weekday": "토", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 4, "avail": ["참여자4", "참여자6", "참여자9", "참여자10"], "unavailCount": 6, "unavail": ["참여자1", "참여자2", "참여자3", "참여자5", "참여자7", "참여자8"]}, {"month": 11, "day": 7, "weekday": "토", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 3, "avail": ["참여자3", "참여자6", "참여자10"], "unavailCount": 7, "unavail": ["참여자1", "참여자2", "참여자4", "참여자5", "참여자7", "참여자8", "참여자9"]}, {"month": 11, "day": 7, "weekday": "토", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 5, "avail": ["참여자3", "참여자6", "참여자7", "참여자9", "참여자10"], "unavailCount": 5, "unavail": ["참여자1", "참여자2", "참여자4", "참여자5", "참여자8"]}, {"month": 11, "day": 8, "weekday": "일", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 4, "avail": ["참여자1", "참여자6", "참여자9", "참여자10"], "unavailCount": 6, "unavail": ["참여자2", "참여자3", "참여자4", "참여자5", "참여자7", "참여자8"]}, {"month": 11, "day": 8, "weekday": "일", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 6, "avail": ["참여자1", "참여자2", "참여자3", "참여자6", "참여자7", "참여자10"], "unavailCount": 4, "unavail": ["참여자4", "참여자5", "참여자8", "참여자9"]}, {"month": 11, "day": 8, "weekday": "일", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 5, "avail": ["참여자1", "참여자2", "참여자3", "참여자6", "참여자10"], "unavailCount": 5, "unavail": ["참여자4", "참여자5", "참여자7", "참여자8", "참여자9"]}, {"month": 11, "day": 28, "weekday": "토", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 5, "avail": ["참여자1", "참여자4", "참여자6", "참여자9", "참여자10"], "unavailCount": 5, "unavail": ["참여자2", "참여자3", "참여자5", "참여자7", "참여자8"]}, {"month": 11, "day": 28, "weekday": "토", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 3, "avail": ["참여자1", "참여자6", "참여자10"], "unavailCount": 7, "unavail": ["참여자2", "참여자3", "참여자4", "참여자5", "참여자7", "참여자8", "참여자9"]}, {"month": 11, "day": 28, "weekday": "토", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 5, "avail": ["참여자1", "참여자6", "참여자7", "참여자9", "참여자10"], "unavailCount": 5, "unavail": ["참여자2", "참여자3", "참여자4", "참여자5", "참여자8"]}, {"month": 12, "day": 12, "weekday": "토", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 5, "avail": ["참여자1", "참여자4", "참여자6", "참여자9", "참여자10"], "unavailCount": 5, "unavail": ["참여자2", "참여자3", "참여자5", "참여자7", "참여자8"]}, {"month": 12, "day": 12, "weekday": "토", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 4, "avail": ["참여자1", "참여자3", "참여자6", "참여자10"], "unavailCount": 6, "unavail": ["참여자2", "참여자4", "참여자5", "참여자7", "참여자8", "참여자9"]}, {"month": 12, "day": 12, "weekday": "토", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 5, "avail": ["참여자1", "참여자3", "참여자6", "참여자9", "참여자10"], "unavailCount": 5, "unavail": ["참여자2", "참여자4", "참여자5", "참여자7", "참여자8"]}, {"month": 10, "day": 10, "weekday": "토", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 3, "avail": ["참여자5", "참여자9", "참여자10"], "unavailCount": 7, "unavail": ["참여자1", "참여자2", "참여자3", "참여자4", "참여자6", "참여자7", "참여자8"]}, {"month": 10, "day": 10, "weekday": "토", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 2, "avail": ["참여자3", "참여자10"], "unavailCount": 8, "unavail": ["참여자1", "참여자2", "참여자4", "참여자5", "참여자6", "참여자7", "참여자8", "참여자9"]}, {"month": 10, "day": 10, "weekday": "토", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 4, "avail": ["참여자3", "참여자7", "참여자9", "참여자10"], "unavailCount": 6, "unavail": ["참여자1", "참여자2", "참여자4", "참여자5", "참여자6", "참여자8"]}, {"month": 10, "day": 11, "weekday": "일", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 4, "avail": ["참여자1", "참여자5", "참여자6", "참여자9"], "unavailCount": 6, "unavail": ["참여자2", "참여자3", "참여자4", "참여자7", "참여자8", "참여자10"]}, {"month": 10, "day": 11, "weekday": "일", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 4, "avail": ["참여자1", "참여자3", "참여자6", "참여자7"], "unavailCount": 6, "unavail": ["참여자2", "참여자4", "참여자5", "참여자8", "참여자9", "참여자10"]}, {"month": 10, "day": 11, "weekday": "일", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 3, "avail": ["참여자1", "참여자3", "참여자6"], "unavailCount": 7, "unavail": ["참여자2", "참여자4", "참여자5", "참여자7", "참여자8", "참여자9", "참여자10"]}, {"month": 10, "day": 17, "weekday": "토", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 3, "avail": ["참여자4", "참여자6", "참여자9"], "unavailCount": 7, "unavail": ["참여자1", "참여자2", "참여자3", "참여자5", "참여자7", "참여자8", "참여자10"]}, {"month": 10, "day": 17, "weekday": "토", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 2, "avail": ["참여자5", "참여자6"], "unavailCount": 8, "unavail": ["참여자1", "참여자2", "참여자3", "참여자4", "참여자7", "참여자8", "참여자9", "참여자10"]}, {"month": 10, "day": 17, "weekday": "토", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 4, "avail": ["참여자5", "참여자6", "참여자7", "참여자9"], "unavailCount": 6, "unavail": ["참여자1", "참여자2", "참여자3", "참여자4", "참여자8", "참여자10"]}, {"month": 10, "day": 18, "weekday": "일", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 5, "avail": ["참여자1", "참여자4", "참여자5", "참여자9", "참여자10"], "unavailCount": 5, "unavail": ["참여자2", "참여자3", "참여자6", "참여자7", "참여자8"]}, {"month": 10, "day": 18, "weekday": "일", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 3, "avail": ["참여자1", "참여자7", "참여자10"], "unavailCount": 7, "unavail": ["참여자2", "참여자3", "참여자4", "참여자5", "참여자6", "참여자8", "참여자9"]}, {"month": 10, "day": 18, "weekday": "일", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 2, "avail": ["참여자1", "참여자10"], "unavailCount": 8, "unavail": ["참여자2", "참여자3", "참여자4", "참여자5", "참여자6", "참여자7", "참여자8", "참여자9"]}, {"month": 11, "day": 15, "weekday": "일", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 4, "avail": ["참여자4", "참여자6", "참여자9", "참여자10"], "unavailCount": 6, "unavail": ["참여자1", "참여자2", "참여자3", "참여자5", "참여자7", "참여자8"]}, {"month": 11, "day": 15, "weekday": "일", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 4, "avail": ["참여자3", "참여자6", "참여자7", "참여자10"], "unavailCount": 6, "unavail": ["참여자1", "참여자2", "참여자4", "참여자5", "참여자8", "참여자9"]}, {"month": 11, "day": 15, "weekday": "일", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 3, "avail": ["참여자3", "참여자6", "참여자10"], "unavailCount": 7, "unavail": ["참여자1", "참여자2", "참여자4", "참여자5", "참여자7", "참여자8", "참여자9"]}, {"month": 11, "day": 21, "weekday": "토", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 3, "avail": ["참여자4", "참여자6", "참여자9"], "unavailCount": 7, "unavail": ["참여자1", "참여자2", "참여자3", "참여자5", "참여자7", "참여자8", "참여자10"]}, {"month": 11, "day": 21, "weekday": "토", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 2, "avail": ["참여자3", "참여자6"], "unavailCount": 8, "unavail": ["참여자1", "참여자2", "참여자4", "참여자5", "참여자7", "참여자8", "참여자9", "참여자10"]}, {"month": 11, "day": 21, "weekday": "토", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 4, "avail": ["참여자3", "참여자6", "참여자7", "참여자9"], "unavailCount": 6, "unavail": ["참여자1", "참여자2", "참여자4", "참여자5", "참여자8", "참여자10"]}, {"month": 11, "day": 22, "weekday": "일", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 3, "avail": ["참여자1", "참여자9", "참여자10"], "unavailCount": 7, "unavail": ["참여자2", "참여자3", "참여자4", "참여자5", "참여자6", "참여자7", "참여자8"]}, {"month": 11, "day": 22, "weekday": "일", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 5, "avail": ["참여자1", "참여자2", "참여자3", "참여자7", "참여자10"], "unavailCount": 5, "unavail": ["참여자4", "참여자5", "참여자6", "참여자8", "참여자9"]}, {"month": 11, "day": 22, "weekday": "일", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 4, "avail": ["참여자1", "참여자2", "참여자3", "참여자10"], "unavailCount": 6, "unavail": ["참여자4", "참여자5", "참여자6", "참여자7", "참여자8", "참여자9"]}, {"month": 12, "day": 6, "weekday": "일", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 5, "avail": ["참여자1", "참여자4", "참여자6", "참여자9", "참여자10"], "unavailCount": 5, "unavail": ["참여자2", "참여자3", "참여자5", "참여자7", "참여자8"]}, {"month": 12, "day": 6, "weekday": "일", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 4, "avail": ["참여자1", "참여자2", "참여자6", "참여자10"], "unavailCount": 6, "unavail": ["참여자3", "참여자4", "참여자5", "참여자7", "참여자8", "참여자9"]}, {"month": 12, "day": 6, "weekday": "일", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 4, "avail": ["참여자1", "참여자2", "참여자6", "참여자10"], "unavailCount": 6, "unavail": ["참여자3", "참여자4", "참여자5", "참여자7", "참여자8", "참여자9"]}, {"month": 11, "day": 29, "weekday": "일", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 4, "avail": ["참여자4", "참여자6", "참여자9", "참여자10"], "unavailCount": 6, "unavail": ["참여자1", "참여자2", "참여자3", "참여자5", "참여자7", "참여자8"]}, {"month": 11, "day": 29, "weekday": "일", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 4, "avail": ["참여자2", "참여자6", "참여자7", "참여자10"], "unavailCount": 6, "unavail": ["참여자1", "참여자3", "참여자4", "참여자5", "참여자8", "참여자9"]}, {"month": 11, "day": 29, "weekday": "일", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 3, "avail": ["참여자2", "참여자6", "참여자10"], "unavailCount": 7, "unavail": ["참여자1", "참여자3", "참여자4", "참여자5", "참여자7", "참여자8", "참여자9"]}, {"month": 12, "day": 5, "weekday": "토", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 4, "avail": ["참여자4", "참여자6", "참여자9", "참여자10"], "unavailCount": 6, "unavail": ["참여자1", "참여자2", "참여자3", "참여자5", "참여자7", "참여자8"]}, {"month": 12, "day": 5, "weekday": "토", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 2, "avail": ["참여자6", "참여자10"], "unavailCount": 8, "unavail": ["참여자1", "참여자2", "참여자3", "참여자4", "참여자5", "참여자7", "참여자8", "참여자9"]}, {"month": 12, "day": 5, "weekday": "토", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 3, "avail": ["참여자6", "참여자9", "참여자10"], "unavailCount": 7, "unavail": ["참여자1", "참여자2", "참여자3", "참여자4", "참여자5", "참여자7", "참여자8"]}, {"month": 12, "day": 13, "weekday": "일", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 4, "avail": ["참여자4", "참여자6", "참여자9", "참여자10"], "unavailCount": 6, "unavail": ["참여자1", "참여자2", "참여자3", "참여자5", "참여자7", "참여자8"]}, {"month": 12, "day": 13, "weekday": "일", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 3, "avail": ["참여자3", "참여자6", "참여자10"], "unavailCount": 7, "unavail": ["참여자1", "참여자2", "참여자4", "참여자5", "참여자7", "참여자8", "참여자9"]}, {"month": 12, "day": 13, "weekday": "일", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 3, "avail": ["참여자3", "참여자6", "참여자10"], "unavailCount": 7, "unavail": ["참여자1", "참여자2", "참여자4", "참여자5", "참여자7", "참여자8", "참여자9"]}, {"month": 12, "day": 19, "weekday": "토", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 3, "avail": ["참여자4", "참여자9", "참여자10"], "unavailCount": 7, "unavail": ["참여자1", "참여자2", "참여자3", "참여자5", "참여자6", "참여자7", "참여자8"]}, {"month": 12, "day": 19, "weekday": "토", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 2, "avail": ["참여자3", "참여자10"], "unavailCount": 8, "unavail": ["참여자1", "참여자2", "참여자4", "참여자5", "참여자6", "참여자7", "참여자8", "참여자9"]}, {"month": 12, "day": 19, "weekday": "토", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 3, "avail": ["참여자3", "참여자9", "참여자10"], "unavailCount": 7, "unavail": ["참여자1", "참여자2", "참여자4", "참여자5", "참여자6", "참여자7", "참여자8"]}, {"month": 12, "day": 20, "weekday": "일", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 3, "avail": ["참여자1", "참여자9", "참여자10"], "unavailCount": 7, "unavail": ["참여자2", "참여자3", "참여자4", "참여자5", "참여자6", "참여자7", "참여자8"]}, {"month": 12, "day": 20, "weekday": "일", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 3, "avail": ["참여자1", "참여자2", "참여자10"], "unavailCount": 7, "unavail": ["참여자3", "참여자4", "참여자5", "참여자6", "참여자7", "참여자8", "참여자9"]}, {"month": 12, "day": 20, "weekday": "일", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 3, "avail": ["참여자1", "참여자2", "참여자10"], "unavailCount": 7, "unavail": ["참여자3", "참여자4", "참여자5", "참여자6", "참여자7", "참여자8", "참여자9"]}, {"month": 10, "day": 4, "weekday": "일", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 3, "avail": ["참여자4", "참여자5", "참여자9"], "unavailCount": 7, "unavail": ["참여자1", "참여자2", "참여자3", "참여자6", "참여자7", "참여자8", "참여자10"]}, {"month": 10, "day": 4, "weekday": "일", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 1, "avail": ["참여자7"], "unavailCount": 9, "unavail": ["참여자1", "참여자2", "참여자3", "참여자4", "참여자5", "참여자6", "참여자8", "참여자9", "참여자10"]}, {"month": 10, "day": 4, "weekday": "일", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 0, "avail": [], "unavailCount": 10, "unavail": ["참여자1", "참여자2", "참여자3", "참여자4", "참여자5", "참여자6", "참여자7", "참여자8", "참여자9", "참여자10"]}, {"month": 12, "day": 26, "weekday": "토", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 3, "avail": ["참여자1", "참여자4", "참여자9"], "unavailCount": 7, "unavail": ["참여자2", "참여자3", "참여자5", "참여자6", "참여자7", "참여자8", "참여자10"]}, {"month": 12, "day": 26, "weekday": "토", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 1, "avail": ["참여자1"], "unavailCount": 9, "unavail": ["참여자2", "참여자3", "참여자4", "참여자5", "참여자6", "참여자7", "참여자8", "참여자9", "참여자10"]}, {"month": 12, "day": 26, "weekday": "토", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 2, "avail": ["참여자1", "참여자9"], "unavailCount": 8, "unavail": ["참여자2", "참여자3", "참여자4", "참여자5", "참여자6", "참여자7", "참여자8", "참여자10"]}, {"month": 12, "day": 27, "weekday": "일", "band": "오전", "bandStart": "06:00", "bandEnd": "12:00", "availCount": 2, "avail": ["참여자4", "참여자9"], "unavailCount": 8, "unavail": ["참여자1", "참여자2", "참여자3", "참여자5", "참여자6", "참여자7", "참여자8", "참여자10"]}, {"month": 12, "day": 27, "weekday": "일", "band": "오후", "bandStart": "14:00", "bandEnd": "18:00", "availCount": 1, "avail": ["참여자2"], "unavailCount": 9, "unavail": ["참여자1", "참여자3", "참여자4", "참여자5", "참여자6", "참여자7", "참여자8", "참여자9", "참여자10"]}, {"month": 12, "day": 27, "weekday": "일", "band": "저녁", "bandStart": "19:00", "bandEnd": "21:00", "availCount": 1, "avail": ["참여자2"], "unavailCount": 9, "unavail": ["참여자1", "참여자3", "참여자4", "참여자5", "참여자6", "참여자7", "참여자8", "참여자9", "참여자10"]}];
+  var NAMES = ["참여자1", "참여자2", "참여자3", "참여자4", "참여자5", "참여자6", "참여자7", "참여자8", "참여자9", "참여자10"];
+  var MONTHS = [10,11,12];
+  var BAND_ORDER = ["오전","오후","저녁"];
+  var refState = { sortMode: "count" };
+
+  function tier(count){
+    if(count>=5) return "good";
+    if(count>=3) return "mid";
+    return "low";
+  }
+  function fmtDate(r){ return r.month+"월 "+String(r.day).padStart(2,"0")+"일"; }
+
+  var monthSections = document.getElementById("monthSections");
+  var sectionEls = {};
+  MONTHS.forEach(function(m){
+    var title = document.createElement("div");
+    title.className = "ref-month-title";
+    var count = ROWS.filter(function(r){return r.month===m;}).length;
+    title.textContent = m+"월 (" + count + "개 시간대)";
+    monthSections.appendChild(title);
+
+    var wrap = document.createElement("div");
+    wrap.className = "table-wrap";
+    wrap.innerHTML = '<table><thead><tr><th>날짜</th><th>시간대</th><th>가능 인원</th><th>가능</th><th>불가능</th></tr></thead><tbody></tbody></table>';
+    monthSections.appendChild(wrap);
+    sectionEls[m] = wrap.querySelector("tbody");
+  });
+
+  function chipRow(list, on){
+    return list.map(function(n){
+      return '<span class="chip '+(on?"on":"off")+'">'+n+'</span>';
+    }).join("");
+  }
+
+  function renderRef(){
+    MONTHS.forEach(function(m){
+      var mrows = ROWS.filter(function(r){ return r.month===m; }).slice();
+      var counts = Array.from(new Set(mrows.map(function(r){return r.availCount;}))).sort(function(a,b){return b-a;});
+      var rank1 = counts[0], rank2 = counts.length>1 ? counts[1] : null;
+
+      mrows.sort(function(a,b){
+        if(refState.sortMode === "count"){
+          if(b.availCount !== a.availCount) return b.availCount - a.availCount;
+          return (a.day - b.day) || (BAND_ORDER.indexOf(a.band)-BAND_ORDER.indexOf(b.band));
+        } else {
+          return (a.day - b.day) || (BAND_ORDER.indexOf(a.band)-BAND_ORDER.indexOf(b.band));
+        }
+      });
+
+      var tbody = sectionEls[m];
+      tbody.innerHTML = "";
+      var frag = document.createDocumentFragment();
+      mrows.forEach(function(r){
+        var tr = document.createElement("tr");
+        var rankClass = "", badge = "";
+        if(r.availCount === rank1){ rankClass = "rank1"; badge = '<span class="badge rank1">1순위</span>'; }
+        else if(rank2 !== null && r.availCount === rank2){ rankClass = "rank2"; badge = '<span class="badge rank2">2순위</span>'; }
+        if(rankClass) tr.classList.add(rankClass);
+        var t = tier(r.availCount);
+        var pct = (r.availCount/10*100).toFixed(0);
+        tr.innerHTML =
+          '<td class="date-cell">'+fmtDate(r)+'<span class="wd">('+r.weekday+')</span></td>'+
+          '<td class="band-cell"><span class="b-label">'+r.band+'</span><span class="b-time">'+r.bandStart+'&ndash;'+r.bandEnd+'</span></td>'+
+          '<td class="bar-cell tier-'+t+'"><div class="bar-wrap"><span class="bar-num">'+r.availCount+'/10</span><span class="bar-track"><span class="bar-fill" style="width:'+pct+'%"></span></span></div>'+badge+'</td>'+
+          '<td><div class="chips">'+chipRow(r.avail, true)+'</div></td>'+
+          '<td><div class="chips">'+chipRow(r.unavail, false)+'</div></td>';
+        frag.appendChild(tr);
+      });
+      tbody.appendChild(frag);
+    });
+  }
+
+  document.getElementById("sortMode").addEventListener("change", function(ev){
+    refState.sortMode = ev.target.value;
+    renderRef();
+  });
+
+  renderRef();
+})();
+</script>
+
+</body></html>
